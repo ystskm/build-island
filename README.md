@@ -9,7 +9,7 @@ You can get a solution for some of defects/bugs in the internal loader of nodejs
 ```js
     ...
     "script": {
-      "build": "npx build-island build cmd/oips"
+      "build": "npx build-island b cmd/oips"
     },
     ...
     // => you can run a build safely which root directory is at "./cmd/oips" (child directory, package `type: "module"`)
