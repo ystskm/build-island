@@ -1,0 +1,28 @@
+{
+  "name": "build-island",
+  "version": "0.0.1",
+  "description": "Manage intermediate process for TypeScript, CommonJS and Vanilla JS mixed environment",
+  "main": "index.js",
+  "bin": {
+    "b": "./bin/buildIsland.js"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ystskm/build-island.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "ES",
+    "Module",
+    "NodeJS"
+  ],
+  "author": "ystskm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ystskm/build-island/issues"
+  },
+  "homepage": "https://github.com/ystskm/build-island#readme"
+}
