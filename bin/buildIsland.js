@@ -3,11 +3,14 @@
  * (Common) buildIsland.js
  * TypeScript と CommonJS / VanilaJS 混合プロジェクトにおいて、TypeScript のビルドエラーを抑制する。
  */
-const argv = Object.assign([ 'cmd/oips' ], process.argv.slice(2));
-// console.log(process.argv, process.execArgv)
+const argv = [ ].concat(process.argv);
+while(argv.length && (argv[0] == 'b' || (/\/(node|npm|npx|yarn|b)$/).test(argv[0]))) argv.shift();
+argv[0] = argv[0] || 'cmd/oips';
+// console.log(process.argv, process.execArgv);
 // console.log('=>', argv);
 const pairs = { 
-  black: 0, red: 1, green: 2, yellow: 100, blue: 4, magenta: 5, cyan: 6, white: 7, pale: 69, gray: 242
+  black: 0, red: 1, green: 2, yellow: 100, blue: 4, magenta: 5, cyan: 6, white: 7, 
+  pale: 69, gray: 242
 };
 const tx = { }, bg = { };
 Object.keys(pairs).forEach(k=>{
